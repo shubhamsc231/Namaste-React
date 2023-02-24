@@ -1,0 +1,11 @@
+#head1{
+  color: red;
+}
+#head2 {
+  color: orange;
+}
+#container{
+    border:3px solid black;
+    margin:auto;
+    text-align: center;
+}
