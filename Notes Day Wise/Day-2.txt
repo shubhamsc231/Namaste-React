@@ -1,0 +1,40 @@
+Namaste React Day 1
+:>to deploy the react code, bundler is required, default if WEBPACK,creat-react-app uses WEBPACK only.
+:>webpack or parcel packages hai toh we need a package manager in our project-npm - for minifer,optimise and other- basically a package manager
+:>to install npm - npm init -y : (-y)-removes varios questions
+:>we use npm install command to add any package.
+PARCEL 
+:> npm install -D parcel
+:> -D means dev dependencies means we need this package in our development enviornment.
+:>(^)caret- to update the packages install to their minor version. such as 2.3.2 can upgrade to 2.3.3
+:>(~)tilda- to update the packages install to their minor version. in package.json
+:>package.lockjson- very imp file, lock the version, never have to put to gitignore, keeps the record o
+:>integrity in package-lock.json--
+:>npx- excutes using npm
+:> to start the app using parcel we use-- npx parcel index.html-{entry point of our app}
+:>to start npx parcel index.html-post this....  advantages of PARCEL
+it creates a server for you
+it cleans up the code
+it does minification
+it does hot module Replacement.
+it does dev and prod build smoothly,
+it does image optimisation also as it only takes website load slow,
+it has super fast build algo,
+it also does caching by development for us,
+it is compatible with older versions of browsers as well,
+it manages port number as well by default localhost:1234,
+it helps to run HTTPS on dev env also,
+it has ZERO congif,
+:> <script type="module" src="app.js/> mandatory to add type="module" as import and export works post this only.
+:>to add react and react app we need this cmmd-
+import React from "react";
+import ReactDOM from "react-dom/client";
+:>Parcel - brings live server functionality also, 
+hot module reloading(HMR) and file watcher algorithm- se once you save the file automatically the changes are visible.
+:>file watcher algorithm-written in C++,keeps the track of all the files in project and tells server to reload if any change is there.
+:>npx parcel index.html-it creates the dev env quickly and host it to a server, whereas
+npx parcel build index.html- create the files for production ready.
+:>we should put parcel-cache in gitignore.
+:>anything which can be generated on server push to gitignore
+:>Transitive Dependencies->dependencies under dependencies.
+:>
