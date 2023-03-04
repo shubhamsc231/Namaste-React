@@ -1,4 +1,4 @@
-Namaste React Day 1
+Namaste React Day 2
 :>to deploy the react code, bundler is required, default if WEBPACK,creat-react-app uses WEBPACK only.
 :>webpack or parcel packages hai toh we need a package manager in our project-npm - for minifer,optimise and other- basically a package manager
 :>to install npm - npm init -y : (-y)-removes varios questions
