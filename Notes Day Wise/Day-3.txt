@@ -1,1 +1,25 @@
 Namaste React Day 3
+:>whenever a div has more than 1 child in it , we must initalise key to it.---Reconcillation
+:>keys improves performance of the app.
+:>React.createElement()-gives us an object and this object is converted in HTML code and put in DOM.
+:>JSX-Javascript XML,it is much more easier to use it as multiple react.createElement messes up the code.
+-we can update the HTML using JS.
+ex: const heading=<h1>Welcome</h1>
+-JSX is js inside HTML,
+-JSX is HTML like syntax in JS,
+:>to initalise a class in jsx we use classname
+:>jsx if we run in console will not work as it doesn't understand jsx,in real time BABEL converts the jsx and gives us.
+:>BABEL creates a Abstract Syntax Tree(AST)-and works as compiler and line by line transforms the code.
+:>JSX=>uses React.createElement()=>transforms in OBject=>HTML(DOM),
+:>there is one more package-lock.json in node-modules.
+REACT Component---names start with a Capital letter.
+Functional COMPONENTS-
+:>they are a normal js function which returns some piece of react elements.
+:>when there are multiple lines in functional components then return block  must be enclosed in (); return(); 
+:>we can miss return statement as well.
+ex: const HeaderComponent=()=>{<div></div>}
+:>when we have to call a react element in a functional components then simply call it in {},
+:> we can call a functional components inside another component by {funtionname()} or <FuntionalNAme/>0;
+:> we can do all js inside {} these brackets in any component.
+:> JSX is very secure, it sanitises everything.
+:> if we use component inside components-Component Composition.

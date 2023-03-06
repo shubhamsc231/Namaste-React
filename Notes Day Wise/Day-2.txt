@@ -25,6 +25,7 @@ it is compatible with older versions of browsers as well,
 it manages port number as well by default localhost:1234,
 it helps to run HTTPS on dev env also,
 it has ZERO congif,
+it uses TREE Shaking algo, which removes unwanted code
 :> <script type="module" src="app.js/> mandatory to add type="module" as import and export works post this only.
 :>to add react and react app we need this cmmd-
 import React from "react";
@@ -37,4 +38,4 @@ npx parcel build index.html- create the files for production ready.
 :>we should put parcel-cache in gitignore.
 :>anything which can be generated on server push to gitignore
 :>Transitive Dependencies->dependencies under dependencies.
-:>
+:>browserlist - our code is converted to older versions which supports the browser -this is known as polyfill, it is done by babel
