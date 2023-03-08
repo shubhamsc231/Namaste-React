@@ -143,7 +143,7 @@ const restaurantList = [
 ];
 const RestaurantCard = ({ name, cuisines, area, cloudinaryImageId, url }) => {
   return (
-    <div className="restaurantCard">
+    <div className="restaurantCard" >
       <a href={url} target="_blank"  >
         <img
           src={
