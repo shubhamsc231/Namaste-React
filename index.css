@@ -1,11 +1,35 @@
-#head1{
-  color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
 }
-#head2 {
-  color: orange;
+.header > ul {
+  display: flex;
+  list-style-type: none;
 }
-#container{
-    border:3px solid black;
-    margin:auto;
-    text-align: center;
+.header > ul > li {
+  padding: 30px;
+  cursor: pointer;
+}
+.header > img {
+  width: 90px;
+}
+.restaurantCard {
+  width: 250px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.restaurantCard > a > img {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.restaurantCard > a {
+text-decoration: none;
 }

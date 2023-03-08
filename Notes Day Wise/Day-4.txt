@@ -1,0 +1,18 @@
+ Namaste React Day 4
+:>For any functional component , to return JSX is not mandatory.
+:><Title />---known as self closing tag.
+:>to reload our page use <a href="/"></a>.
+:>JSX Must have one single parent to return.for more then one parent either we can use <div> or React.fragment;
+:>React.Fragement-> is a component which is exported by REACT.
+ways to write it either as <React.fragement> or <></>empty tag.
+:>for inline css in js- we can write it as- <div style={{css can be added}}>
+:>Config Driven UI
+:>Optional Chaining-data?.name
+:>Props means properties or normal parameters to a function.
+<ReataurantCard retaurant={reatuarant[0]}/>
+:>we can simply use props as const header=(props)=>{}  or if we know the data then we can destructue it as const header=({reatuarant})=>{}
+:>Virtual DOM- keeping a representation of a Real dom 
+why we need?- for Reconiliation in REACT
+:>React Fiber-new conciliation engine
+:>we should not use index of an array as keys in components.
+:>
