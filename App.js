@@ -142,25 +142,25 @@ const restaurantList = [
     cuisines: ["Pizzas", "Pastas"],
   },
 ];
-// const RestaurantCard = ({ name, cuisines, area, cloudinaryImageId, url }) => {
-//   return (
-//     <>
-//       <div className="restaurantCard">
-//         <a href={url} target="_blank">
-//           <img
-//             src={
-//               "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-//               cloudinaryImageId
-//             }
-//           />
-//           <h1>{name}</h1>
-//           <h3>{cuisines.join(", ")}</h3>
-//           <h4>{area}</h4>
-//         </a>
-//       </div>
-//     </>
-//   );
-// };
+const RestaurantCard = ({ name, cuisines, area, cloudinaryImageId, url }) => {
+  return (
+    <>
+      <div className="restaurantCard">
+        <a href={url} target="_blank">
+          <img
+            src={
+              "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+              cloudinaryImageId
+            }
+          />
+          <h1>{name}</h1>
+          <h3>{cuisines.join(", ")}</h3>
+          <h4>{area}</h4>
+        </a>
+      </div>
+    </>
+  );
+};
 const Header = () => {
   return (
     <div className="header">
@@ -198,4 +198,4 @@ const Applayout = () => {
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header />);
+root.render(<Applayout />);
