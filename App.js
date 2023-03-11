@@ -6,7 +6,7 @@ import Footer from "./src/components/Footer";
 
 const Applayout = () => {
   return (
-    <>
+    < >
       <Header />
       <Body />
       <Footer />
