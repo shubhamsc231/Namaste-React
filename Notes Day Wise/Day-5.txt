@@ -1,2 +1,20 @@
  Namaste React Day 5
-:>
+:>two ways of exporting the component--
+export default title-it will export, it will export the component, by default.
+:>only one component can be exported using default export.
+ex: export default Header; --by default         export const header=()={}-by name
+:>we can import export by default by simple import Header from "./component.js",--known as Default import.
+:>for by name we need to write like this import {Header} from "./component.js",--known as Named Import.
+:>using default export we can import using any name.
+:>.js and .jsx both extensions are same only. either of one can be used.
+:>whenever we export  multiple components using named export, we can import as import * as obj from ""./path;
+:>congif.js and constants.js are same.
+
+:>React variable - every component in react maintains a state, we declare local variable inside state in react.
+:>Hooks- is just a normal function,
+:>function of useState()- it is used to create state variable, we import it using named import.
+useState-return as array [variablename, function to update the variable];
+we destructue it to use.const [searchInput, setSearchInput] = useState("");
+
+why we need state variables?- whenever we want the vairables in sync with ui we use.
+React watches all the state variables and whenever there is a changes in them it re-renders the component.
