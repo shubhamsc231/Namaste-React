@@ -5,13 +5,7 @@ import Body from "./src/components/Body";
 import Footer from "./src/components/Footer";
 
 const Applayout = () => {
-  return (
-    <React.Fragment>
-      <Header />
-      <Body />
-      <Footer />
-    </React.Fragment>
-  );
+  return <Header />;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
