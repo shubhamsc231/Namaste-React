@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/shubhamsc231/Namaste-React#readme",
   "devDependencies": {
-    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.8.3",
     "process": "^0.11.10"
   },
