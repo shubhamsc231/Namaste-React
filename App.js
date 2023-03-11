@@ -6,11 +6,11 @@ import Footer from "./src/components/Footer";
 
 const Applayout = () => {
   return (
-    <>
+    <React.Fragment>
       <Header />
       <Body />
       <Footer />
-    </>
+    </React.Fragment>
   );
 };
 
