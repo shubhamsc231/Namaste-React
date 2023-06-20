@@ -5,7 +5,7 @@ import Body from "./src/components/Body";
 import Footer from "./src/components/Footer";
 
 const Applayout = () => {
-  return <Header />;
+  return <Header></Header>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
