@@ -3,9 +3,8 @@ import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
 
 function filterData(searchInput, restaurants) {
-  return restaurants.filter((restaurant) =>
-    restaurant.name.includes(searchInput)
-  );
+  let list = restaurants.filter((r) => r.name.match(searchInput));
+  return list;
 }
 const Body = () => {
   const [searchInput, setSearchInput] = useState("");
