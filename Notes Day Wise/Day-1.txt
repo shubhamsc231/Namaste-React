@@ -54,7 +54,7 @@ Implementation using REACT
 =it is not necesary that react can be written in JSX only.
 
 = on root.render(), the code is replaced not appended.
-
+=react is a library not a frame work so we can make small portion in a website to large applications.
 
 
 
