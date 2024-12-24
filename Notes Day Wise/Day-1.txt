@@ -1,4 +1,5 @@
 Namaste React Day 1
+
 :>document.createElement("h1");- creates h1 element using js.
 Implementation using Js
 const heading = document.createElement("h1");
@@ -6,17 +7,26 @@ heading.innerHTML="Everyone";
 const root= document.getElementById("root");
 root.appendChild(heading);
 --the above example shows how to write html code in js language.
+
 :>Browser understands "document" by browser api.
-:>CDN-
-:>emet-
-:>crossorigin-
+
+:>CDN-content delivery network
+
+:>emet-shorthands for html code
+
+:>crossorigin-to handle CORS issue, so that webpages on different servers can be accessed.
+
 :>async & defer-
+
 :>React is just a js library given by facebook. we can initally add React in our code using script tag as:
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>-adds the react lib to the project
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>adds the reactdom lib to project
+=react and reactdom cannot be written in one file as react is also used for mobile development that is React Native.
 :>through REACT we create the elements and through REACTDOM we update the created elements to DOM Tree.
+
 :>in HTML -line by line code is rendered.
 :> Always add the library on top and inside body tag.
+
 Implementation using REACT
 <script>
   const heading = React.createElement("h1", {}, "Namaste");---takes 3 params 
@@ -29,6 +39,7 @@ Implementation using REACT
  :> using may childerns to one div or scaling is an issue with this format of creating elements.
  also html file will be flooded as we need to write multiple scripts tag,
  So concept of JSX was introduce.
+
  :> when we cdm the react links there are 2=>1.development.js-which size is big, 2. production.js=>which is very much optimised.
  :>We can create multiple elements at same time as this:
  const container = React.createElement(
@@ -39,6 +50,8 @@ Implementation using REACT
   [heading1, heading2]
 );
 
+=React.createElement is an object which converts to HTMl by browser.
+=it is not necesary that react can be written in JSX only.
 
 
 
