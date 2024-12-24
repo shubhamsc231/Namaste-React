@@ -1,0 +1,6 @@
+Async and Defer
+normal-<script src=""></script>--->
+html parsing starts if script tag is encountered then immediatly it fetches the script , then exceute it and then HTML parsing continues.
+async - once script is fetched then only the HTML parsing is stopped and script is exceuted.
+order is not maintained in async
+defer= scripts will be exceuted once the html parsing is completed.
