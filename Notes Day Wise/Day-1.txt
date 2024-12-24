@@ -53,6 +53,8 @@ Implementation using REACT
 =React.createElement is an object which converts to HTMl by browser.
 =it is not necesary that react can be written in JSX only.
 
+= on root.render(), the code is replaced not appended.
+
 
 
 
