@@ -9,8 +9,10 @@ const Body = () => {
   const [filteredList, setfilteredList] = useState([]);
   const [searchText, setsearchText] = useState("");
   const handleFilterClick = () => {
+    console.log("filter", filteredList);
+
     setlistofRestaurants(
-      listofRestaurants.filter((res) => res.info.avgRating < 4)
+      listofRestaurants.filter((res) => res.info.avgRating > 4.3)
     );
   };
 
@@ -39,28 +41,34 @@ const Body = () => {
   };
   return (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="flex justify-center items-center m-4 h-20">
+        <div className="p-4 m-2 w-3/6 flex justify-between items-center">
           <input
             type="text"
             placeholder="Search for restaurants and food"
-            className="search-input"
+            className="border border-solid border-black shadow-lg rounded-lg p-2 m-2 w-5/6 flex-wrap"
             value={searchText}
             onChange={(e) => setsearchText(e.target.value)}
           />
-          <button className="" onClick={() => handleSearchClick()}>
-            Search{" "}
+          <button
+            className="bg-green-200 m-4 rounded-lg p-3 text-base hover:text-lg "
+            onClick={() => handleSearchClick()}
+          >
+            Search
           </button>
         </div>
-        <button className="filter-btn" onClick={() => handleFilterClick()}>
+        <button
+          className="p-3 rounded-lg bg-blue-100 h-[fit-content]"
+          onClick={() => handleFilterClick()}
+        >
           Top Rated Restaurants
         </button>
       </div>
-      <div className="res-container">
+      <div className="flex mx-2 gap-3 flex-wrap ">
         {filteredList.map((restaurant) => (
           <Link
             to={`/restaurants/${restaurant.info.id}`}
-            style={{ textDecoration: "none" }}
+            key={restaurant.info.id}
           >
             <RestaurantCard key={restaurant.info.id} response={restaurant} />
           </Link>

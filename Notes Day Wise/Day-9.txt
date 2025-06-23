@@ -1,0 +1,3 @@
+TAIlWIND CSS
+-post css is installed when we install tailwind-postcss is tool for transforming css in javascript.
+-tailwind is very light as it includes classess mentioned only once m-4 only once m-4 is added to bundle.

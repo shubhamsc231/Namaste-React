@@ -1,4 +1,4 @@
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
@@ -92,4 +92,12 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
+
+/* 
+  The following Tailwind directives require processing by Tailwind CSS.
+  Make sure your build setup uses PostCSS with Tailwind, or comment these out if not using Tailwind.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
