@@ -2,3 +2,8 @@ Day-8-> Optimisng the app
 - if we follow single responsibility principle, which means the code you are writing should be small and crisp.
 Custom hook-
 hook is a utility or helper function.
+-Chunking || Code Spiliting || Dynamic Bundling || lazy loading || on demand loading
+-for that we use lazy from react library.
+-const Grocery=lazy(()=>{import ('/components/Grocery)}), react is fast so it immediately loads the component.
+so we use Suspense in routes with a fallback, so that till the component loads till then a fallback jsx is rendered.
+this is how we optimise the application.
