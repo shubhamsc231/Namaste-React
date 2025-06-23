@@ -1,0 +1,4 @@
+Day-8-> Optimisng the app
+- if we follow single responsibility principle, which means the code you are writing should be small and crisp.
+Custom hook-
+hook is a utility or helper function.
