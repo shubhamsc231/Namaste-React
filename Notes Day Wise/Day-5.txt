@@ -9,12 +9,19 @@ ex: export default Header; --by default         export const header=()={}-by nam
 :>.js and .jsx both extensions are same only. either of one can be used.
 :>whenever we export  multiple components using named export, we can import as import * as obj from ""./path;
 :>congif.js and constants.js are same.
-
+-React is fast in dom manipulation.
 :>React variable - every component in react maintains a state, we declare local variable inside state in react.
 :>Hooks- is just a normal function,
 :>function of useState()- it is used to create state variable, we import it using named import.
 useState-return as array [variablename, function to update the variable];
 we destructue it to use.const [searchInput, setSearchInput] = useState("");
-
+local state variable scope is inside its component.
 why we need state variables?- whenever we want the vairables in sync with ui we use.
 React watches all the state variables and whenever there is a changes in them it re-renders the component.
+-whenever state vaiable changes react rerenders the component.
+-react keeps in synce with the ui and data layer.
+
+-React uses Reconciliation Algorithm also known as React fiber.
+-React creates Virtual DOM,that is a representation of Actual DOM.
+- To have a view of virtual dom just print the component in console log. It will show a bug structure.
+it finds the difference between the new DOm and old, and quickly updates the dom. this is called Diffing Algorithm.

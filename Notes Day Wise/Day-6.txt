@@ -1,0 +1,19 @@
+- Earlier programs were wriites in MONOLITH Architecture- all the api's, services, ui, notifications all were present in one 
+single project so if any one changes needs to be done then all full project needs to be compiled , build and deployed.
+-Microservice Architecture- every service present is independent of its changes , compliation and build.different ports are 
+distributed to different Microservices. example- 
+/api will have poort 8000
+/ ui will have port 1234
+-In react we prefer approach whenever Load ->Render->API->Render
+- React has one of the best render mechanism.
+-useEffect Hook->
+useeffect callback function will be called AFTER inital render call.
+-Shimmer ui makes a good user experience.
+-Conditionl Rendering-example- showing shimmer ui i.e based on a condition the ui is changed.
+-js variable and state variable the difference is on change the ui doesnot rerender.
+-thorugh the setvairable tracks the change in variable.
+-how can we use const in useState variable and how are we able to update a const variable value-
+it is because on value change the component rerenders itself and new variabke is created.
+-whenever a state variable updates, react triggers a reconciliation cycle.
+-if the dependecy array is not present in useeffect then on every render , the useeffect will run.
+-never use useState inside a condition.

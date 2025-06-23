@@ -1,0 +1,31 @@
+DAY-7-React Routing
+-import { createBrowserRouter,RouterProvider } from "react-router-dom";
+const appRouter = createBrowserRouter([
+  { path: "/", element: <Applayout /> },
+  { path: "/about", element: <About /> },
+]);
+root.render(<RouterProvider router={appRouter} />);
+import { useRouteError } from "react-router";
+import { useRouteError } from "react-router";
+-useRouteError-hook given by react router
+-to catch error we need to provide errorElement
+const appRouter = createBrowserRouter([
+  { path: "/", element: <Applayout />, errorElement: <Error /> },
+  { path: "/about", element: <About /> },
+  { path: "/contact", element: <Contact /> },
+]);
+const Applayout = () => {
+  return (
+    <div className="app">
+      <Header /> 
+      <Outlet /> to replace the different body for differnet pages we use Outlet and according to children pass in approuter it replaces.
+    </div>
+  );
+};
+-when we want to router to different page never use <a></a> as it reloads the whole page.
+-<Link> should be used.it just changes or refreshs the component.
+that is why react is called single page application as on the same page only components are updated.
+-Routing is of 2 type
+ -CLient Side Routing-where once single file - index.html router through components.
+ -Server Side Routing- where the whole new page is loaded example-home.html,about.html
+ -for dynamic routing- { path: "/restaurants/:reId", element: <RestaurantMenu /> },

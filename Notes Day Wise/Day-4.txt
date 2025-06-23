@@ -1,4 +1,7 @@
  Namaste React Day 4
+ -first plan what to build
+ -create a mock skeleton
+ 
 :>For any functional component , to return JSX is not mandatory.
 :><Title />---known as self closing tag.
 :>to reload our page use <a href="/"></a>.

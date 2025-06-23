@@ -1,16 +1,16 @@
-import { IMG_URL } from "../../constants";
-
-const RestaurantCard = ({ name, cuisines, area, cloudinaryImageId, url }) => {
+import { CND_URL } from "./utils/constants";
+const RestaurantCard = (props) => {
+  const { info } = props.response;
+  const { name, cuisines, avgRatingString, costForTwo, cloudinaryImageId } =
+    info;
   return (
-      <div className="restaurantCard">
-        <a href={url} target="_blank">
-          <img src={IMG_URL + cloudinaryImageId} />
-          <h1>{name}</h1>
-          <h3>{cuisines.join(", ")}</h3>
-          <h4>{area}</h4>
-        </a>
-      </div>
+    <div className="res-card" key={info.id}>
+      <img className="res-icon" src={`${CND_URL}${cloudinaryImageId}`} />
+      <h3>{name}</h3>
+      <h4>{cuisines.join()}</h4>
+      <h4>{avgRatingString}</h4>
+      <h4>{costForTwo}</h4>
+    </div>
   );
 };
-
 export default RestaurantCard;
